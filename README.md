@@ -36,15 +36,16 @@ Run the application
 Open in browser
 Visit: https://localhost:7193/swagger
 
-API Endpoints
-Method	    Endpoint	                                       Description
-GET	        /api/products	                                   Get all products
-GET	        /api/products/{id}	                             Get product by ID
-POST	      /api/products	                                   Add new product
-PUT	        /api/products/{id}	                             Update product
-DELETE	    /api/products/{id}	                             Delete product
-PUT	        /api/products/decrement-stock/{id}/{quantity}    Decrease stock
-PUT	        /api/products/add-to-stock/{id}/{quantity}	     Increase stock
+| Method | Endpoint                                        | Description       |
+| ------ | ----------------------------------------------- | ----------------- |
+| GET    | `/api/products`                                 | Get all products  |
+| GET    | `/api/products/{id}`                            | Get product by ID |
+| POST   | `/api/products`                                 | Add new product   |
+| PUT    | `/api/products/{id}`                            | Update product    |
+| DELETE | `/api/products/{id}`                            | Delete product    |
+| PUT    | `/api/products/decrement-stock/{id}/{quantity}` | Decrease stock    |
+| PUT    | `/api/products/add-to-stock/{id}/{quantity}`    | Increase stock    |
+
 
 Sample Product JSON
 {
@@ -66,18 +67,16 @@ Testing API (Using Bruno)
 Folder Structure
 
 SportsProductApi/
-│
 ├── Controllers/
 │   └── ProductsController.cs
-│
 ├── Models/
 │   └── Product.cs
-│
 ├── Services/
 │   └── ProductService.cs
-│
 ├── Program.cs
-└── Startup.cs (if applicable)
+└── launchSettings.json
+
+
 
 Unit Tests
 - Unit test classes are created using xUnit and cover the product service layer.
